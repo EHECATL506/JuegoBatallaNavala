@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juego.UsuarioRegistradoController">
+   <children>
+      <ImageView fitHeight="478.0" fitWidth="584.0" layoutY="1.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/EHECA/Documents/NetBeansProjects/Juego/Imagenes/templo_de_poseidon_by_harryzon.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="EtiquetaTítulo" layoutX="206.0" layoutY="23.0" prefHeight="52.0" prefWidth="188.0" text="Batalla Naval">
+         <font>
+            <Font name="Bauhaus 93" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="EtiquetaLema" layoutX="162.0" layoutY="75.0" prefHeight="35.0" prefWidth="277.0" text="Bienvenido usuario, preparate a luchar">
+         <font>
+            <Font name="Bauhaus 93" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="BotónEstadística" layoutX="35.0" layoutY="148.0" mnemonicParsing="false" onAction="#VerEstadísticas" prefHeight="52.0" prefWidth="142.0" text="Consultar Estadísticas" />
+      <Button fx:id="BotónPartida" layoutX="372.0" layoutY="148.0" mnemonicParsing="false" onAction="#BuscaPartida" prefHeight="52.0" prefWidth="121.0" text="Buscar Partida" />
+      <Button fx:id="BotónSalir" layoutX="41.0" layoutY="338.0" mnemonicParsing="false" onAction="#CerrarSesión" prefHeight="52.0" prefWidth="142.0" text="Salir" />
+      <Button fx:id="BotónSalaPrivada" layoutX="379.0" layoutY="346.0" mnemonicParsing="false" onAction="#CreaSalaPrivada" prefHeight="52.0" prefWidth="121.0" text="Crear Sala Privada" />
+   </children>
+</AnchorPane>

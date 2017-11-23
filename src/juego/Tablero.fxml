@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="497.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juego.TableroController">
+   <children>
+<!--      <ImageView fx:id="orientacionguerra" fitHeight="509.0" fitWidth="766.0" layoutX="1.0" layoutY="-9.0" opacity="0.65" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/EHECA/Desktop/PROYECTOS/imagenes%20batalla%20naval/sample_9caca70566cb08e31dd51dc1ec92c210.jpg" />
+         </image>
+      </ImageView>-->
+      <Label fx:id="Etiquetatitulo" layoutX="199.0" layoutY="25.0" prefHeight="17.0" prefWidth="145.0" text="Coloca los barcos">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </Label>
+      <GridPane fx:id="Tablero" gridLinesVisible="true" layoutX="51.0" layoutY="95.0" prefHeight="340.0" prefWidth="335.0" style="-fx-background-color: lightblue;">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="45.0" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <TitledPane fx:id="Zonas" animated="false" collapsible="false" layoutX="51.0" layoutY="69.0" prefHeight="26.0" prefWidth="335.0" text="A         B          C      D        E        F        G       H          I        J">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </TitledPane>
+      <Button fx:id="Botónsalir" layoutX="530.0" layoutY="286.0" mnemonicParsing="false" onAction="#Regresar" prefHeight="53.0" prefWidth="102.0" text="Regresar" />
+      <Button fx:id="botonsubmarino" layoutX="407.0" layoutY="95.0" mnemonicParsing="false" text="Submarino" />
+      <Button fx:id="Barco" layoutX="419.0" layoutY="143.0" mnemonicParsing="false" text="Barco" />
+      <Button fx:id="botoncarguero" layoutX="409.0" layoutY="186.0" mnemonicParsing="false" text="Carguero" />
+      <TextField fx:id="orientacionsubmarino" layoutX="525.0" layoutY="95.0" prefHeight="25.0" prefWidth="46.0" promptText="V/H" />
+      <TextField fx:id="orientacionbarco" layoutX="525.0" layoutY="143.0" prefHeight="25.0" prefWidth="46.0" promptText="V/H" />
+      <TextField fx:id="orientacioncarguero" layoutX="525.0" layoutY="186.0" prefHeight="25.0" prefWidth="46.0" promptText="V/H" />
+      <Label layoutX="406.0" layoutY="42.0" text="Tipo de navío" />
+      <Label layoutX="498.0" layoutY="42.0" text="Vertical/Horizontal(V/H)" />
+      <Label layoutX="646.0" layoutY="42.0" text="Eje X" />
+      <Label layoutX="707.0" layoutY="42.0" text="Eje Y" />
+      <TextField fx:id="submarinox" layoutX="636.0" layoutY="95.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="submarinoy" layoutX="697.0" layoutY="95.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="barcox" layoutX="636.0" layoutY="143.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="barcoy" layoutX="697.0" layoutY="143.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="carguerox" layoutX="636.0" layoutY="186.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="cargueroy" layoutX="697.0" layoutY="186.0" prefHeight="25.0" prefWidth="46.0" />
+      <Button fx:id="botonguerra" layoutX="408.0" layoutY="229.0" mnemonicParsing="false" text="De guerra" />
+      <TextField fx:id="orientacionguerra" layoutX="525.0" layoutY="229.0" prefHeight="25.0" prefWidth="46.0" promptText="V/H" />
+      <TextField fx:id="guerrax" layoutX="636.0" layoutY="229.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="guerray" layoutX="697.0" layoutY="229.0" prefHeight="25.0" prefWidth="46.0" />
+      <Button fx:id="botonempezar" layoutX="508.0" layoutY="369.0" mnemonicParsing="false" onAction="#accionaceptar" prefHeight="53.0" prefWidth="145.0" text="Empezar partida" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="312.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juego.GanadorController">
+   <children>
+      <ImageView fitHeight="312.0" fitWidth="447.0" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/EHECA/Desktop/PROYECTOS/imagenes%20batalla%20naval/2450c366ce7320c1b8b94b99cd283a72.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="tituloVictoria" layoutX="153.0" layoutY="14.0" prefHeight="50.0" prefWidth="142.0" text="Victoria" textAlignment="CENTER" textFill="#92ab20">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="mensaje" layoutX="86.0" layoutY="197.0" text="Has ganado la partida, enhorabuena!" textFill="#cda319">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="botoncerrar" layoutX="172.0" layoutY="241.0" mnemonicParsing="false" text="Terminar partida" />
+   </children>
+</AnchorPane>

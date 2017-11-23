@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="313.0" prefWidth="475.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="juego.DerrotaController">
+   <children>
+      <ImageView fitHeight="319.0" fitWidth="475.0" layoutX="1.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../imagenes%20batalla%20naval/sample_9ce8d374c421b36fbde31764b31044c9.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="etiquetaperder" layoutX="127.0" layoutY="24.0" prefHeight="70.0" prefWidth="222.0" text="Derrota">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="derrotamensaje" layoutX="79.0" layoutY="184.0" prefHeight="62.0" prefWidth="319.0" text="Lástima, mejor suerte a la próxima">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="botoncerrar" layoutX="135.0" layoutY="246.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="176.0" text="Terminar partida" />
+   </children>
+</AnchorPane>

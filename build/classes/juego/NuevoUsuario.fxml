@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juego.NuevoUsuarioController">
+   <children>
+      <ImageView fitHeight="490.0" fitWidth="607.0" layoutX="-2.0" layoutY="-2.0" opacity="0.67" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/EHECA/Documents/NetBeansProjects/Juego/Imagenes/Grandes_Juegos_Magicos_Anime.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Titulo" layoutX="232.0" layoutY="8.0" prefHeight="41.0" prefWidth="147.0" text="Batalla Naval">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="TItuloregistrar" layoutX="179.0" layoutY="42.0" text="Registrar un Nuevo Usuario">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="EtiquetaUsuario" layoutX="226.0" layoutY="120.0" text="Nombre del Usuario">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="EtiquetaContraseña" layoutX="249.0" layoutY="181.0" text="Contraseña">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="EtiquetaNombre" layoutX="226.0" layoutY="245.0" text="Nombre Completo">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Etiquetacorreo" layoutX="232.0" layoutY="317.0" text="Correo Electrónico">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="BotónRegistra" layoutX="140.0" layoutY="403.0" mnemonicParsing="false" onAction="#RegistraUsuario" prefHeight="41.0" prefWidth="103.0" text="Registrar" />
+      <Button fx:id="Botónatrás" layoutX="326.0" layoutY="403.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="41.0" prefWidth="103.0" text="Cancelar" />
+      <TextField fx:id="Campoperfil" layoutX="213.0" layoutY="144.0" prefHeight="25.0" prefWidth="182.0" promptText="Perfil de Jugador" />
+      <TextField fx:id="campocontraseña" layoutX="213.0" layoutY="211.0" prefHeight="25.0" prefWidth="182.0" promptText="Tu contraseña" />
+      <TextField fx:id="camponombre" layoutX="170.0" layoutY="284.0" prefHeight="25.0" prefWidth="270.0" promptText="Tu nombre completo" />
+      <TextField fx:id="campocorreo" layoutX="172.0" layoutY="349.0" prefHeight="25.0" prefWidth="270.0" promptText="Correo electrónico" />
+      <Label fx:id="Mensaje" layoutX="222.0" layoutY="77.0" prefHeight="27.0" prefWidth="147.0" text="Hola futuro usuario">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

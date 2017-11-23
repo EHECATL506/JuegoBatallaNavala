@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juego.IniciarPartidaController">
+   <children>
+      <Label fx:id="etiquetaListaUsuarios" layoutX="194.0" layoutY="27.0" text="Iniciar Partida">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaUsuario" layoutX="356.0" layoutY="105.0" text="Usuario actual:" />
+      <Button fx:id="botonRetar" layoutX="360.0" layoutY="183.0" mnemonicParsing="false" onAction="#botonRetar" prefHeight="39.0" prefWidth="71.0" text="Retar" />
+      <Button fx:id="botonCancelar" layoutX="360.0" layoutY="269.0" mnemonicParsing="false" onAction="#botonCancelar" prefHeight="39.0" prefWidth="71.0" text="Cancelar" />
+      <TextField fx:id="listaJugadores" layoutX="51.0" layoutY="113.0" prefHeight="212.0" prefWidth="206.0" />
+      <Label layoutX="51.0" layoutY="89.0" prefHeight="24.0" prefWidth="219.0" text="Lista de usuarios disponibles para jugar" />
+   </children>
+</AnchorPane>

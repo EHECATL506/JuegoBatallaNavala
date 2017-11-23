@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="CampoContraseña" prefHeight="529.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juego.PerfilController">
+   <children>
+      <Label fx:id="EtiquetaTitulo" layoutX="196.0" layoutY="23.0" prefHeight="49.0" prefWidth="186.0" text="Batalla Naval">
+         <font>
+            <Font name="AR DECODE" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="177.0" layoutY="83.0" text="Registra a un nuevo jugador">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="RegistrarUsuario" layoutX="163.0" layoutY="441.0" mnemonicParsing="false" onAction="#RegistraUsuario" prefHeight="55.0" prefWidth="101.0" text="Registrar" />
+      <Button fx:id="CancelarRegistro" layoutX="336.0" layoutY="441.0" mnemonicParsing="false" onAction="#CancelarRegistro" prefHeight="55.0" prefWidth="93.0" text="Cancelar" />
+      <Label fx:id="EtiquetaUsuario" layoutX="227.0" layoutY="119.0" prefHeight="34.0" prefWidth="126.0" text="Nombre de Usuario" />
+      <TextField fx:id="CampoUsuario" layoutX="177.0" layoutY="153.0" prefHeight="25.0" prefWidth="255.0" />
+      <TextField fx:id="CampoContraseña" layoutX="167.0" layoutY="231.0" prefHeight="25.0" prefWidth="255.0" />
+      <TextField fx:id="CampoNombre" layoutX="170.0" layoutY="301.0" prefHeight="25.0" prefWidth="255.0" />
+      <TextField fx:id="CampoCorreo" layoutX="163.0" layoutY="375.0" prefHeight="25.0" prefWidth="263.0" />
+      <Label layoutX="250.0" layoutY="198.0" prefHeight="17.0" prefWidth="173.0" text="Contraseña" />
+      <Label fx:id="EtiquetaNombre" layoutX="237.0" layoutY="272.0" prefHeight="17.0" prefWidth="126.0" text="Nombre Completo" />
+      <Label fx:id="EtiquetaCorreo" layoutX="214.0" layoutY="342.0" prefHeight="25.0" prefWidth="173.0" text="Dirección de Correo Electrónico" />
+   </children>
+</AnchorPane>
